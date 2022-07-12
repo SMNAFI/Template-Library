@@ -1,4 +1,3 @@
-
 const int N = 10000005;
 bitset<N> prime;
 
@@ -13,3 +12,5 @@ void sieve() {
         }
     }
 }
+
+// N(log(log sqrt(N)))
