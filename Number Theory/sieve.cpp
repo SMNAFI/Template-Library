@@ -1,12 +1,13 @@
 const int N = 10000005;
-bitset<N> prime;
+bitset<N + 5> prime;
 
 void sieve() {
-    for(int i = 4; i <= N; i += 2) prime[i] = true;
+    int i, j, limit = sqrt(N * 1.) + 2;
+    for(i = 4; i <= N; i += 2) prime[i] = true;
 
-    for(int i = 3; i * i <= N; i += 2) {
+    for(i = 3; i <= limit; i += 2) {
         if(!prime[i]) {
-            for (int j = i * i; j <= N; j += i * 2) {
+            for (j = i * i; j <= N; j += i * 2) {
                 prime[j] = true;
             }
         }
