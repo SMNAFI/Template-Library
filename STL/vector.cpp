@@ -8,8 +8,8 @@
     // 2D vector
     vector<vector<type>> v;
     vector<vector<type>> v(size)
-    vector<vector<int>> v(n, vector<int> (m));
-    vector<vector<int>> vec( n , vector<int> (m, value));
+    vector<vector<type>> v(n, vector<int> (m));
+    vector<vector<type>> vec( n , vector<int> (m, value));
     vector<vector<int>> v {
         {1, 2, 3}, 
         {4, 5, 6}, 
@@ -22,19 +22,21 @@
     v.pop_back();           // O(1)
     v.insert(iterator, value); // O(N)
     v.erase(iterator); // O(N)
+    v.resize(size);
+    
 
     find(v.begin(), v.end(), value); // return iterator
 
 
+// Functions
     v.size();
     v.clear();
     v.front();
     v.back();
     v.empty();
-    v.resize(size);
 
 
-// Iterator
+// Iterators
     v.begin();
     v.end();
     v.rbegin();
