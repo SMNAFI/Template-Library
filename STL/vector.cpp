@@ -17,23 +17,26 @@
     };
 
 
-// Operations
+// Access
+    v[index];
+    v.at(index);
+    v.fron();
+    v.back();
+
+    
+// Modifiers
     v.push_back(value);      // O(1)
     v.pop_back();           // O(1)
     v.insert(iterator, value); // O(N)
     v.erase(iterator); // O(N)
-    v.resize(size);
-    
-
-    find(v.begin(), v.end(), value); // return iterator
-
-
-// Functions
-    v.size();
     v.clear();
-    v.front();
-    v.back();
+    v.resize(size);
+
+
+// Capacity
+    v.size();
     v.empty();
+    v.resize(new_size);
 
 
 // Iterators
